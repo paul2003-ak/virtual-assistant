@@ -19,7 +19,7 @@ const PORT=process.env.PORT || 4000
 
 //new type setup of cors
 app.use(cors({
-    origin:" http://localhost:5174",//react url
+    origin:" https://virtual-assistant-frontend-ay0w.onrender.com",//react url
     credentials:true//Supports cookies and sessions (with credentials: true)
 }))
 
