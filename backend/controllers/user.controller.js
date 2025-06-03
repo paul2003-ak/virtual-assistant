@@ -29,8 +29,8 @@ module.exports.register = async (req, res, next) => {
 
         res.cookie('token', token, {
             httpOnly: true,     // 🔒 Prevents JS access via document.cookie
-            secure: false,       // 🔐 Sends cookie over HTTP only when it deploy the it goes in HTTPS then it becomes true
-            sameSite: 'strict', // 🚫 Blocks cross-site cookie sending (CSRF protection)
+            secure: true,       // 🔐 Sends cookie over HTTP only when it deploy the it goes in HTTPS then it becomes true
+            sameSite: 'None', // 🚫 Blocks cross-site cookie sending (CSRF protection)
             maxAge: 24 * 60 * 60 * 1000, // ⏳ 24 hrs 60 min 60 sec 1000 milisecond
         })
 
@@ -63,8 +63,8 @@ module.exports.login = async (req, res, next) => {
         
         res.cookie('token', token, {
             httpOnly: true,     // 🔒 Prevents JS access via document.cookie
-            secure: false,       // 🔐 Sends cookie over HTTP only when it deploy the it goes in HTTPS then it becomes true
-            sameSite: 'strict', // 🚫 Blocks cross-site cookie sending (CSRF protection)
+            secure: true,       // 🔐 Sends cookie over HTTP only when it deploy the it goes in HTTPS then it becomes true
+            sameSite: 'None', // 🚫 Blocks cross-site cookie sending (CSRF protection)
             maxAge: 24 * 60 * 60 * 1000, // ⏳ 24 hrs 60 min 60 sec 1000 milisecond
         })
 
