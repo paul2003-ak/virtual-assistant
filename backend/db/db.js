@@ -1,7 +1,7 @@
 const mongoose=require('mongoose')
 
-function connecttoDb(){
-    mongoose.connect(process.env.MONGODB_URL
+async function connecttoDb(){
+    await mongoose.connect(process.env.MONGODB_URL
     ).then(()=>{
         console.log("connect to Db..")
     }).catch(error=>{
