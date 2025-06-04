@@ -1,4 +1,4 @@
-const uploadoncloudinary = require('../config/cloudinary');
+  const uploadoncloudinary = require('../config/cloudinary');
 const usermodel = require('../models/user.model')
 const userservice = require('../services/user.services')
 
@@ -30,7 +30,7 @@ module.exports.register = async (req, res, next) => {
         res.cookie('token', token, {
             httpOnly: true,     // 🔒 Prevents JS access via document.cookie
             secure: true,       // 🔐 Sends cookie over HTTP only when it deploy the it goes in HTTPS then it becomes true
-            sameSite: 'None', // 🚫 Blocks cross-site cookie sending (CSRF protection)
+            sameSite: "None" , // 🚫 Blocks cross-site cookie sending (CSRF protection)
             maxAge: 24 * 60 * 60 * 1000, // ⏳ 24 hrs 60 min 60 sec 1000 milisecond
         })
 
@@ -64,7 +64,7 @@ module.exports.login = async (req, res, next) => {
         res.cookie('token', token, {
             httpOnly: true,     // 🔒 Prevents JS access via document.cookie
             secure: true,       // 🔐 Sends cookie over HTTP only when it deploy the it goes in HTTPS then it becomes true
-            sameSite: 'None', // 🚫 Blocks cross-site cookie sending (CSRF protection)
+            sameSite: "None", // 🚫 Blocks cross-site cookie sending (CSRF protection)
             maxAge: 24 * 60 * 60 * 1000, // ⏳ 24 hrs 60 min 60 sec 1000 milisecond
         })
 
