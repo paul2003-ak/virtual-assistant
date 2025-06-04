@@ -34,7 +34,7 @@ const Register = () => {
         }
 
         try {
-            const response = await axios.post("https://virtual-assistant-backend-7rke.onrender.com/user/register", newuser,{withCredentials:true});
+            const response = await axios.post("https://virtual-assistant-ayan-backend.onrender.com/user/register", newuser,{withCredentials:true});
             console.log("response", response.status);
 
             if (response.status == 201) {
