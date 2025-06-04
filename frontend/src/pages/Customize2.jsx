@@ -29,7 +29,7 @@ const Customize2 = () => {
             }else{
                 formdata.append("imageurl",selectimage)
             }
-            const result=await axios.post("https://virtual-assistant-backend-7rke.onrender.com/updateassistant",formdata,{withCredentials:true})
+            const result=await axios.post("https://virtual-assistant-ayan-backend.onrender.com/updateassistant",formdata,{withCredentials:true})
 
             setUserdata(result.data)
             console.log(userdata)
