@@ -1,4 +1,4 @@
-const express=require ('express')
+ const express=require ('express')
 const dotenv=require('dotenv')
 dotenv.config();
 const connecttoDb=require('./db/db')
@@ -18,7 +18,7 @@ const PORT=process.env.PORT || 4000
 
 //new type setup of cors
 app.use(cors({
-    origin:" https://virtual-assistant-frontend-ay0w.onrender.com",//react url
+    origin:"https://virtual-assistant-af8z.onrender.com",//react url
     credentials:true//Supports cookies and sessions (with credentials: true)
 }))
 
