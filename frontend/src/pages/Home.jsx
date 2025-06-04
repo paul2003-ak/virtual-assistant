@@ -20,7 +20,7 @@ const Home = () => {
 
   const handlelogout = async () => {
     try {
-      const response = await axios.get("https://virtual-assistant-backend-7rke.onrender.com/user/logout", { withCredentials: true });
+      const response = await axios.get("https://virtual-assistant-ayan-backend.onrender.com/user/logout", { withCredentials: true });
       navigate("/signin");
       console.log('Logout response:', response);
       setUserdata(null);
