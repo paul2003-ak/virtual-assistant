@@ -12,7 +12,7 @@ const Usercontext = ({children}) => {
 
     const handlecurrentuser=async ()=>{
          try{
-            const result=await axios.get("https://virtual-assistant-backend-7rke.onrender.com/user/profile",{withCredentials:true})
+            const result=await axios.get("https://virtual-assistant-ayan-backend.onrender.com/user/profile",{withCredentials:true})
             setUserdata(result.data)
             console.log(result.data)
          }catch(error){
@@ -27,7 +27,7 @@ const Usercontext = ({children}) => {
 
     const geminiresponse=async(command)=>{
       try{
-        const result=await axios.post("https://virtual-assistant-backend-7rke.onrender.com/user/command",{command},{withCredentials:true})
+        const result=await axios.post("https://virtual-assistant-ayan-backend.onrender.com/user/command",{command},{withCredentials:true})
         return result.data
       }catch(error){
         console.log(error)
